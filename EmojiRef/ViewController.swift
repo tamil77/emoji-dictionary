@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var emojis = ["🤓","😡","🙏🏻","😀","⛑","⚽️","🚗"]
     var definition = ["Nerd","Mad","Vanakkam","Classic Smiley","Medic","Soccer","Car"]
+    var indexRow = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,13 +33,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indexRow = indexPath.row
         performSegue(withIdentifier: "moveSegue", sender: emojis[indexPath.row])
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as!DefinitionViewController
         defVC.emoji = sender as!String
-//        defVC.label =
+        defVC.label = definition[indexRow]
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
