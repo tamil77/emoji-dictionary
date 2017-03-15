@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiRef" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiRef" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="-204" y="-245.12743628185908"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="xcZ-iu-VjB">
             <objects>
-                <viewController id="hZo-69-kx0" sceneMemberID="viewController">
+                <viewController id="hZo-69-kx0" customClass="DefinitionViewController" customModule="EmojiRef" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PpT-EB-GVs"/>
                         <viewControllerLayoutGuide type="bottom" id="INp-Sg-0Qj"/>
@@ -77,6 +77,10 @@
                             <constraint firstItem="grN-h0-U1k" firstAttribute="centerX" secondItem="KQ8-ws-pyd" secondAttribute="centerX" id="dZJ-D3-v26"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="Zc5-TC-HWf" id="ihU-cu-MaB"/>
+                        <outlet property="emojilabel" destination="grN-h0-U1k" id="YOe-0Y-2gY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VV-NV-6xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

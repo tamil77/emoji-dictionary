@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var theCoolTableView: UITableView!
     
     var emojis = ["🤓","😡","🙏🏻","😀","⛑","⚽️","🚗"]
+    var definition = ["Nerd","Mad","Vanakkam","Classic Smiley","Medic","Soccer","Car"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,7 +32,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "moveSegue", sender: "⌚️")
+        performSegue(withIdentifier: "moveSegue", sender: emojis[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let defVC = segue.destination as!DefinitionViewController
+        defVC.emoji = sender as!String
+//        defVC.label =
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
