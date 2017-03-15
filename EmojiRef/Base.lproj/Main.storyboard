@@ -40,6 +40,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1142" y="-245"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xcZ-iu-VjB">
+            <objects>
+                <viewController id="hZo-69-kx0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PpT-EB-GVs"/>
+                        <viewControllerLayoutGuide type="bottom" id="INp-Sg-0Qj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQ8-ws-pyd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grN-h0-U1k">
+                                <rect key="frame" x="78.5" y="40" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely house" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-TC-HWf">
+                                <rect key="frame" x="106.5" y="299" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zc5-TC-HWf" firstAttribute="centerX" secondItem="KQ8-ws-pyd" secondAttribute="centerX" id="RZO-rp-1GK"/>
+                            <constraint firstItem="Zc5-TC-HWf" firstAttribute="top" secondItem="grN-h0-U1k" secondAttribute="bottom" constant="20" id="TMq-NN-jYe"/>
+                            <constraint firstItem="grN-h0-U1k" firstAttribute="top" secondItem="KQ8-ws-pyd" secondAttribute="top" constant="40" id="Wnu-5C-AnK"/>
+                            <constraint firstItem="grN-h0-U1k" firstAttribute="centerX" secondItem="KQ8-ws-pyd" secondAttribute="centerX" id="dZJ-D3-v26"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VV-NV-6xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478" y="-245"/>
         </scene>
     </scenes>
 </document>
